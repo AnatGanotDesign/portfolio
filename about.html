@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Anat Ganot</title>
+  <meta name="description" content="Anat Ganot designs interfaces for fields where mistakes are expensive — clinical systems, medical software, and tools people depend on under pressure." />
+
+  <link rel="preload" href="fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css?v=20260630" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+      <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
+      <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
+      <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+      -->
+      <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+      <a href="book-call.html" class="nav-link" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+      <a href="about.html" class="nav-link is-active" data-text="About"><span>About</span></a>
+
+      <a href="#" class="btn-whatsapp nav-chat js-whatsapp" role="button">
+        <span class="wa-icon" aria-hidden="true"></span>
+        <span>Chat with me now</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+    <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
+    <!-- Hidden for now — to be designed later
+    <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+    -->
+    <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+    <a href="book-call.html" class="nav-link" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+    <a href="about.html" class="nav-link is-active" data-text="About"><span>About</span></a>
+  </div>
+
+  <main class="about">
+    <!-- Intro -->
+    <section class="about-intro">
+      <h1 class="about-headline">I design interfaces where mistakes are expensive</h1>
+    </section>
+
+    <!-- Section 1 — image left, text right -->
+    <section class="about-row about-row--img-left">
+      <h2 class="about-title">What I actually do</h2>
+      <figure class="about-figure">
+        <img src="assets/about/about-1.jpg" alt="Anat working on a clinical interface"
+             onerror="this.classList.add('img-missing'); this.alt='Add assets/about/about-1.jpg';" />
+      </figure>
+      <div class="about-textblock">
+        <p class="about-text">I design products for fields where a mistake has a real cost: clinical systems, medical software, tools people depend on under pressure.
+My job isn't to make a screen look finished, it's to know what it really affects, what it costs to build, and what it does to the person using it.</p>
+        <p class="about-text strong">Getting that wrong costs time, money, and frustrated users.</p>
+        <p class="about-text">Getting it right is my whole job.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 — text left, image right (with caption) -->
+    <section class="about-row about-row--img-right">
+      <h2 class="about-title">How I think about design</h2>
+      <figure class="about-figure">
+        <img src="assets/about/about-2.jpg" alt="Field research session"
+             onerror="this.classList.add('img-missing'); this.alt='Add assets/about/about-2.jpg';" />
+        <figcaption class="about-caption">Field research before solutions</figcaption>
+      </figure>
+      <div class="about-textblock">
+        <p class="about-text">Good design starts long before the first screen, with what the real problem is and who actually pays when it's wrong. I'd rather ship the right thing slightly later than a polished version of the wrong one.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 — image left, text right -->
+    <section class="about-row about-row--img-left">
+      <h2 class="about-title">Where I'm different</h2>
+      <figure class="about-figure">
+        <img src="assets/about/about-3.jpg" alt="Whiteboard problem framing"
+             onerror="this.classList.add('img-missing'); this.alt='Add assets/about/about-3.jpg';" />
+      </figure>
+      <div class="about-textblock">
+        <p class="about-text">Most senior designers can solve the problem you hand them; fewer can tell you it's the wrong problem before you've spent three months on it. I speak the language of the people paying for the work: cost, timeline, the business decision underneath the pixels.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 — text left, image right -->
+    <section class="about-row about-row--img-right">
+      <h2 class="about-title">What it's like to work with me</h2>
+      <figure class="about-figure wide">
+        <img src="assets/about/about-4.jpg" alt="Working alongside the team"
+             onerror="this.classList.add('img-missing'); this.alt='Add assets/about/about-4.jpg';" />
+      </figure>
+      <div class="about-textblock">
+        <p class="about-text">I'm not a vendor who takes a brief and disappears. I come in as part of the team in the room for the messy parts, available the way an in-house designer would be.
+That closeness is where the real work happens: I challenge assumptions when it matters, and care as much about the people building the product as the ones using it.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a href="mailto:anat.ganot1@gmail.com" class="footer-email">anat.ganot1@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="tel:+972547887666" class="footer-phone">054.788.7666</a>
+        <span class="footer-sep">/</span>
+        <a href="https://www.linkedin.com/in/anat-ganot-a889bb147/" class="footer-linkedin" target="_blank" rel="noopener" aria-label="Anat Ganot on LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <span class="c">©</span>
+        <span>Anat Ganot 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (mobile only) -->
+  <a href="#" class="whatsapp-float js-whatsapp" aria-label="Chat with me on WhatsApp">
+    <span class="wa-icon" aria-hidden="true"></span>
+    <span class="whatsapp-float-label">Chat with me now</span>
+  </a>
+
+  <script src="main.js?v=20260630"></script>
+</body>
+</html>

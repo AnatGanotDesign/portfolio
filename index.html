@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anat Ganot — Design &amp; Business · AI · People · Research</title>
+  <meta name="description" content="Anat Ganot — senior UX/UI designer working across design, business, AI, and research. Selected work with leading healthcare, fintech, and dev-tool teams." />
+
+  <!-- Fonts: Google Sans is self-hosted (see @font-face in styles.css) — supports English + Hebrew. -->
+  <link rel="preload" href="fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css?v=20260630" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="nav-link is-active" data-text="Home"><span>Home</span></a>
+      <a href="#work" class="nav-link" data-text="Work"><span>Work</span></a>
+      <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
+      <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+      -->
+      <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+      <a href="book-call.html" class="nav-link" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+      <a href="about.html" class="nav-link" data-text="About"><span>About</span></a>
+
+      <a href="#" class="btn-whatsapp nav-chat js-whatsapp" role="button">
+        <span class="wa-icon" aria-hidden="true"></span>
+        <span>Chat with me now</span>
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (full-screen overlay; kept outside <header> so its fixed
+       positioning is relative to the viewport, not the blurred header) -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#home" class="nav-link is-active" data-text="Home"><span>Home</span></a>
+    <a href="#work" class="nav-link" data-text="Work"><span>Work</span></a>
+    <!-- Hidden for now — to be designed later
+    <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+    -->
+    <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+    <a href="book-call.html" class="nav-link" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+    <a href="about.html" class="nav-link" data-text="About"><span>About</span></a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <h1 class="display">Anat Ganot<br />That&rsquo;s me.</h1>
+        <p class="breadcrumb">
+          Design &amp; Business <span class="sep">\</span> AI
+          <span class="sep">\</span> <span class="accent">People</span>
+          <span class="sep">\</span> Research
+        </p>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/portrait.jpg" alt="Portrait of Anat Ganot"
+             onerror="this.classList.add('img-missing'); this.alt='Add assets/portrait.jpg';" />
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work container" id="work">
+      <div class="work-head">
+        <h2 class="display work-title">Work</h2>
+        <a href="#projects" class="work-arrow" aria-label="Jump to projects">
+          <svg viewBox="318.958 32.958 68.084 68.084" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" focusable="false">
+            <path d="M353 32.958C371.801 32.958 387.042 48.1993 387.042 67C387.042 85.8007 371.801 101.042 353 101.042C334.199 101.042 318.958 85.8007 318.958 67C318.958 48.1993 334.199 32.958 353 32.958ZM353 51.958C351.688 51.958 350.625 53.0215 350.625 54.333V73.9326L343.596 66.9043C342.668 65.9768 341.165 65.9768 340.237 66.9043C339.31 67.8318 339.31 69.3353 340.237 70.2627L351.32 81.3457C352.248 82.2732 353.752 82.2732 354.68 81.3457L365.763 70.2627C366.69 69.3352 366.69 67.8318 365.763 66.9043C364.835 65.9768 363.332 65.9768 362.404 66.9043L355.375 73.9326V54.333C355.375 53.0215 354.312 51.958 353 51.958Z" fill="#242A2D"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Banner (full-bleed) -->
+    <div class="banner-wrap">
+      <div class="banner container-inner">
+        <div class="banner-text">
+          <p class="banner-title">Want to see screens?</p>
+          <p class="banner-sub">My work is NDA-protected, but happy to share via a password-protected link or a quick intro call :-)</p>
+        </div>
+        <a href="#" class="btn-whatsapp js-whatsapp" role="button">
+          <span class="wa-icon" aria-hidden="true"></span>
+          <span>Chat with me now</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ============ PROJECT GRID ============ -->
+    <section class="work-grid-wrap container" id="projects">
+      <div class="card-grid" id="card-grid"><!-- cards injected by main.js --></div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a href="mailto:anat.ganot1@gmail.com" class="footer-email">anat.ganot1@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="tel:+972547887666" class="footer-phone">054.788.7666</a>
+        <span class="footer-sep">/</span>
+        <a href="https://www.linkedin.com/in/anat-ganot-a889bb147/" class="footer-linkedin" target="_blank" rel="noopener" aria-label="Anat Ganot on LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <span class="c">©</span>
+        <span>Anat Ganot 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING WHATSAPP (bottom-left) ============ -->
+  <a href="#" class="whatsapp-float js-whatsapp" aria-label="Chat with me on WhatsApp">
+    <span class="wa-icon" aria-hidden="true"></span>
+    <span class="whatsapp-float-label">Chat with me now</span>
+  </a>
+
+  <script src="main.js?v=20260630"></script>
+</body>
+</html>

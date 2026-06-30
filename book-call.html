@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Cafe with me — Anat Ganot</title>
+  <meta name="description" content="Grab a relaxed virtual coffee with Anat Ganot. Twenty minutes, no agenda, just a good conversation about what you're working on." />
+
+  <link rel="preload" href="fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=20260630" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+      <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
+      <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
+      <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+      -->
+      <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+      <a href="book-call.html" class="nav-link is-active" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+      <a href="about.html" class="nav-link" data-text="About"><span>About</span></a>
+
+      <a href="#" class="btn-whatsapp nav-chat js-whatsapp" role="button">
+        <span class="wa-icon" aria-hidden="true"></span>
+        <span>Chat with me now</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+    <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
+    <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
+    <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
+    -->
+    <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
+    <a href="book-call.html" class="nav-link is-active" data-text="Virtual Cafe with me"><span>Virtual Cafe with me</span></a>
+    <a href="about.html" class="nav-link" data-text="About"><span>About</span></a>
+  </div>
+
+  <main class="booking">
+    <h1 class="booking-title">Thank you, I'm flattered ☺️</h1>
+    <p class="booking-sub">So glad we're meeting! Pick a time that works for you.</p>
+
+    <!-- Google Calendar Appointment Scheduling -->
+    <div class="booking-embed" id="scheduler">
+      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2rjv8d9-wh7faSopVtat0smcvfru3qarH12ITJ2u8vlSaL7nMfxqINRD5jwOSKc32GiVFpGvtq?gv=true" style="border: 0" width="100%" height="600" frameborder="0" title="Book a Virtual Cafe with Anat Ganot"></iframe>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <a href="mailto:anat.ganot1@gmail.com" class="footer-email">anat.ganot1@gmail.com</a>
+        <span class="footer-sep">/</span>
+        <a href="tel:+972547887666" class="footer-phone">054.788.7666</a>
+        <span class="footer-sep">/</span>
+        <a href="https://www.linkedin.com/in/anat-ganot-a889bb147/" class="footer-linkedin" target="_blank" rel="noopener" aria-label="Anat Ganot on LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <span class="c">©</span>
+        <span>Anat Ganot 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (mobile only) -->
+  <a href="#" class="whatsapp-float js-whatsapp" aria-label="Chat with me on WhatsApp">
+    <span class="wa-icon" aria-hidden="true"></span>
+    <span class="whatsapp-float-label">Chat with me now</span>
+  </a>
+
+  <script src="main.js?v=20260630"></script>
+</body>
+</html>
