@@ -69,6 +69,7 @@ if (toggle && mobileMenu) {
 const PROJECTS = [
   {
     name: "I-NEXT (Ichilov)", url: "taamc.org/inext", logo: "inext",
+    href: "https://www.tasmc.org.il/rd/i-next-data/",
     shipping: true,
     desc: "A 0→1 clinical platform for physicians at one of Israel's leading medical centers, designed end-to-end across UX, UI, AI interfaces, and design system. In active daily use by hundreds of users - and I'm still shipping new features today.",
     tags: ["Healthcare", "B2B", "AI Interface", "UX · UI · Design System", "Desktop · Mobile web"],
@@ -190,7 +191,7 @@ function cardHTML(p) {
         </span>
         <div>
           <h3 class="card-title">${p.name}</h3>
-          <a class="card-url" href="https://${p.url}" target="_blank" rel="noopener">${p.url}</a>
+          <a class="card-url" href="${p.href || "https://" + p.url}" target="_blank" rel="noopener">${p.url}</a>
           ${acquired}
         </div>
       </div>
