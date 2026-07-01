@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Unfinished placeholder — keep out of search for now
+Disallow: /case-study.html
+
+Sitemap: https://anatganot.com/sitemap.xml
