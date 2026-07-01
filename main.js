@@ -190,7 +190,7 @@ function cardHTML(p) {
         </span>
         <div>
           <h3 class="card-title">${p.name}</h3>
-          <span class="card-url">${p.url}</span>
+          <a class="card-url" href="https://${p.url}" target="_blank" rel="noopener">${p.url}</a>
           ${acquired}
         </div>
       </div>

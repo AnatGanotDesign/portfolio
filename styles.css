@@ -326,7 +326,10 @@ a { color: inherit; text-decoration: none; }
   font-size: var(--t-xs);
   line-height: var(--lh-xs);
   color: var(--neutral-500);
+  text-decoration: none;                 /* looks like text; opens client site in new tab */
+  width: fit-content;                    /* only the text is clickable, not the whole row */
 }
+.card-url:hover { text-decoration: underline; color: var(--paradiso-800); }
 .card-acquired {
   font-size: var(--t-xs);
   color: var(--neutral-500);
