@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anat Ganot — Design &amp; Business · AI · People · Research</title>
-  <meta name="description" content="Anat Ganot — senior UX/UI designer working across design, business, AI, and research. Selected work with leading healthcare, fintech, and dev-tool teams." />
+  <title>Privacy Policy — Anat Ganot</title>
+  <meta name="description" content="Privacy Policy for anatganot.com — what information is collected and how it's used." />
 
-  <!-- Fonts: Google Sans is self-hosted (see @font-face in styles.css) — supports English + Hebrew. -->
   <link rel="preload" href="fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-
   <link rel="stylesheet" href="styles.css?v=20260702" />
 </head>
 <body>
@@ -17,8 +15,8 @@
   <!-- ============ NAV ============ -->
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
-      <a href="#home" class="nav-link is-active" data-text="Home"><span>Home</span></a>
-      <a href="#work" class="nav-link" data-text="Work"><span>Work</span></a>
+      <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+      <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
       <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
       <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
       -->
@@ -31,19 +29,16 @@
         <span>Let's chat</span>
       </a>
 
-      <!-- Mobile hamburger -->
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
-  <!-- Mobile menu (full-screen overlay; kept outside <header> so its fixed
-       positioning is relative to the viewport, not the blurred header) -->
   <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="#home" class="nav-link is-active" data-text="Home"><span>Home</span></a>
-    <a href="#work" class="nav-link" data-text="Work"><span>Work</span></a>
-    <!-- Hidden for now — to be designed later
+    <a href="index.html" class="nav-link" data-text="Home"><span>Home</span></a>
+    <a href="index.html#work" class="nav-link" data-text="Work"><span>Work</span></a>
+    <!-- "How I Built This Site with AI" hidden for now; restore when the page is designed
     <a href="case-study.html" class="nav-link" data-text="How I Built This Site with AI"><span>How I Built This Site with AI</span></a>
     -->
     <a href="mentoring.html" class="nav-link" data-text="Mentoring | מנטורינג"><span>Mentoring | מנטורינג</span></a>
@@ -51,54 +46,32 @@
     <a href="about.html" class="nav-link" data-text="About"><span>About</span></a>
   </div>
 
-  <main>
-    <!-- ============ HERO ============ -->
-    <section class="hero container" id="home">
-      <div class="hero-text">
-        <h1 class="display">Anat Ganot<br />That&rsquo;s me.</h1>
-        <p class="breadcrumb">
-          Design &amp; Business <span class="sep">\</span> AI
-          <span class="sep">\</span> <span class="accent">People</span>
-          <span class="sep">\</span> Research
-        </p>
-      </div>
-      <div class="hero-photo">
-        <img src="assets/portrait.jpg" alt="Portrait of Anat Ganot"
-             onerror="this.classList.add('img-missing'); this.alt='Add assets/portrait.jpg';" />
-      </div>
-    </section>
+  <main class="legal">
+    <h1 class="legal-title">Privacy Policy</h1>
+    <p class="legal-updated">Last updated: July 2026</p>
 
-    <!-- ============ WORK ============ -->
-    <section class="work container" id="work">
-      <div class="work-head">
-        <h2 class="display work-title">Work</h2>
-        <a href="#projects" class="work-arrow" aria-label="Jump to projects">
-          <svg viewBox="318.958 32.958 68.084 68.084" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" focusable="false">
-            <path d="M353 32.958C371.801 32.958 387.042 48.1993 387.042 67C387.042 85.8007 371.801 101.042 353 101.042C334.199 101.042 318.958 85.8007 318.958 67C318.958 48.1993 334.199 32.958 353 32.958ZM353 51.958C351.688 51.958 350.625 53.0215 350.625 54.333V73.9326L343.596 66.9043C342.668 65.9768 341.165 65.9768 340.237 66.9043C339.31 67.8318 339.31 69.3353 340.237 70.2627L351.32 81.3457C352.248 82.2732 353.752 82.2732 354.68 81.3457L365.763 70.2627C366.69 69.3352 366.69 67.8318 365.763 66.9043C364.835 65.9768 363.332 65.9768 362.404 66.9043L355.375 73.9326V54.333C355.375 53.0215 354.312 51.958 353 51.958Z" fill="#242A2D"/>
-          </svg>
-        </a>
-      </div>
-    </section>
+    <p class="legal-text">This website (anatganot.com) is the personal portfolio of Anat Ganot. I care about your privacy and keep data collection to a minimum. This page explains what information is collected and how it is used.</p>
 
-    <!-- Banner (full-bleed) -->
-    <div class="banner-wrap">
-      <div class="banner container-inner">
-        <div class="banner-text">
-          <p class="banner-title">Want to see screens?</p>
-          <p class="banner-sub">My work is NDA-protected, but happy to share via a password-protected link or a quick intro call :-)</p>
-        </div>
-        <a href="#" class="btn-whatsapp js-whatsapp" role="button">
-          <span class="wa-icon" aria-hidden="true"></span>
-          <span>Let's chat</span>
-        </a>
-      </div>
-    </div>
+    <h2 class="legal-h2">Information I collect</h2>
+    <p class="legal-text"><strong>When you contact me.</strong> If you email, call, or message me on WhatsApp using the links on this site, I receive the contact details and any information you choose to share.</p>
+    <p class="legal-text"><strong>When you book a call.</strong> The "Virtual Cafe" booking uses Google Calendar Appointment Scheduling. When you book, the name, email, and any details you enter are processed by Google and added to my Google Calendar so we can meet.</p>
 
-    <!-- ============ PROJECT GRID ============ -->
-    <section class="work-grid-wrap container" id="projects">
-      <div class="card-grid" id="card-grid"><!-- cards injected by main.js --></div>
-    </section>
+    <h2 class="legal-h2">Cookies and tracking</h2>
+    <p class="legal-text">This site does not use analytics or advertising cookies, and its fonts are hosted on the site itself (no third-party font tracking). The only third-party element that may set cookies is the Google booking calendar on the Virtual Cafe page. It loads only after you accept via the cookie notice. If you decline, the calendar isn't loaded, and you can still reach me by email or WhatsApp.</p>
 
+    <h2 class="legal-h2">Third-party services</h2>
+    <p class="legal-text"><strong>Google</strong> (Calendar / Workspace) — for scheduling and email. <strong>GitHub Pages</strong> — hosts this website; like most web hosts, it may log visitors' IP addresses for security and reliability.</p>
+
+    <h2 class="legal-h2">How I use your information</h2>
+    <p class="legal-text">I use your information only to respond to you and to schedule and hold our conversation or work together. I do not sell your information or share it for marketing.</p>
+
+    <h2 class="legal-h2">Keeping and deleting your information</h2>
+    <p class="legal-text">I keep your information only as long as needed to communicate or work with you. You can ask me to access or delete the information I hold about you at any time — just email me.</p>
+
+    <h2 class="legal-h2">Contact</h2>
+    <p class="legal-text">For any privacy question or request, email <a href="mailto:anat.ganot1@gmail.com">anat.ganot1@gmail.com</a>.</p>
+
+    <p class="legal-text legal-note">This policy may be updated from time to time; the date at the top reflects the latest version.</p>
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -122,7 +95,6 @@
     </div>
   </footer>
 
-  <!-- ============ FLOATING WHATSAPP (bottom-left) ============ -->
   <a href="#" class="whatsapp-float js-whatsapp" aria-label="Chat with me on WhatsApp">
     <span class="wa-icon" aria-hidden="true"></span>
     <span class="whatsapp-float-label">Let's chat</span>

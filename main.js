@@ -16,6 +16,54 @@ document.querySelectorAll(".js-whatsapp").forEach((el) => {
   el.setAttribute("rel", "noopener");
 });
 
+/* --- Cookie consent --------------------------------------------------
+   The only third-party thing that can set cookies is the Google booking
+   calendar. It stays blocked until the visitor accepts. Choice is
+   remembered in localStorage so the banner shows only once.            */
+(function cookieConsent() {
+  const KEY = "cookieConsent";
+  let stored = null;
+  try { stored = localStorage.getItem(KEY); } catch (e) {}
+
+  const iframe = document.getElementById("booking-cal");
+  const note = document.getElementById("booking-note");
+
+  function activateEmbeds() {
+    if (iframe && !iframe.getAttribute("src")) {
+      iframe.setAttribute("src", iframe.getAttribute("data-cookie-src"));
+      iframe.hidden = false;
+    }
+    if (note) note.hidden = true;
+  }
+  function accept() { try { localStorage.setItem(KEY, "accepted"); } catch (e) {} removeBar(); activateEmbeds(); }
+  function reject() { try { localStorage.setItem(KEY, "rejected"); } catch (e) {} removeBar(); if (note) note.hidden = false; }
+
+  let bar = null;
+  function removeBar() { if (bar) { bar.remove(); bar = null; } }
+
+  // the "Load the calendar" button on the booking page = accept
+  document.querySelectorAll(".cookie-accept-inline").forEach((b) => b.addEventListener("click", accept));
+
+  if (stored === "accepted") { activateEmbeds(); return; }
+  if (note) note.hidden = false;           // rejected or undecided: keep calendar gated
+  if (stored === "rejected") return;        // already decided → no banner
+
+  // undecided → show the banner
+  bar = document.createElement("div");
+  bar.className = "cookie-bar";
+  bar.setAttribute("role", "dialog");
+  bar.setAttribute("aria-label", "Cookie consent");
+  bar.innerHTML =
+    '<p class="cookie-text">This site uses cookies to enable certain features. You can accept or decline. See our <a href="privacy.html">Privacy Policy</a>.</p>' +
+    '<div class="cookie-actions">' +
+    '<button class="cookie-btn cookie-reject" type="button">Reject</button>' +
+    '<button class="cookie-btn cookie-accept" type="button">Accept</button>' +
+    "</div>";
+  document.body.appendChild(bar);
+  bar.querySelector(".cookie-accept").addEventListener("click", accept);
+  bar.querySelector(".cookie-reject").addEventListener("click", reject);
+})();
+
 /* --- Mobile menu ----------------------------------------------------- */
 const toggle = document.querySelector(".nav-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
